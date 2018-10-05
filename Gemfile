@@ -49,7 +49,7 @@ group :build do
   gem "iconv", '~> 1.0.4', require: false if Gem::Version.new(RUBY_VERSION.dup) >= Gem::Version.new('2.0')
 end
 
-puppet_version = ENV['PUPPET_GEM_VERSION']
+puppet_version = '5.5.6' # puppet_version = ENV['PUPPET_GEM_VERSION']
 puppet_type = gem_type(puppet_version)
 facter_version = ENV['FACTER_GEM_VERSION']
 hiera_version = ENV['HIERA_GEM_VERSION']
